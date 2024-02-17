@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Para ti mi amor 🥰</title>
+  <style>
+    body {
+      background-color: #f0f0f0; /* Color de fondo bonito */
+      font-family: Arial, sans-serif; /* Fuente predeterminada */
+      text-align: center; /* Centrar el texto */
+      margin-top: 5cm; /* Espacio en la parte superior */
+      position: relative; /* Establecer posición relativa */
+      min-height: 100vh; /* Establecer altura mínima de la página */
+    }
+
+    h1 {
+      color: #333; /* Color del texto */
+    }
+
+    .message-container {
+      margin-top: 10px; /* Margen superior para separar el botón de los textos */
+    }
+
+    button {
+      padding: 15px 30px; /* Aumentar el tamaño del botón */
+      border: none; /* Eliminar borde del botón */
+      background-color: #ff7f50; /* Color de fondo del botón */
+      color: white; /* Color del texto del botón */
+      border-radius: 25px; /* Agregar esquinas redondeadas */
+      cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+      transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+      position: absolute; /* Establecer posición absoluta */
+      bottom: 400px; /* Alinear en la parte inferior */
+      left: 50%; /* Centrar horizontalmente */
+      transform: translateX(-50%); /* Centrar horizontalmente */
+      margin-bottom: 20px; /* Espacio en la parte inferior */
+    }
+
+    button:hover {
+      background-color: #ff6347; /* Cambiar color de fondo al pasar el cursor */
+    }
+
+    .typing-animation {
+      display: inline-block;
+      overflow: hidden;
+      border-right: .15em solid orange; /* Borde para el efecto de escritura */
+      white-space: nowrap;
+      margin: 0 auto;
+      animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
+
+    /* Nuevo estilo para la animación de aparición gradual */
+    .fade-in {
+      opacity: 0; /* Comienza completamente transparente */
+      animation: fadeIn 1.5s ease forwards; /* Aplicar la animación */
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="message-container">
+    <h1>Hola mi amor, presionalo 🤭🧡</h1>
+    <p class="typing-animation">Yo se que este regalo no es la gran cosa, pero espero te guste y claro que nunca va a desaparecer </p>
+    <!-- Cambiamos el efecto de tecleo por un efecto de aparición gradual -->
+    <p class="fade-in">Te amo mucho 💖</p>
+    <p class="fade-in">Eres la mejor, podrias por favor quedarte a mi lado por siempre?🌹</p>
+  </div>
+  <button onclick="redireccionar()">sorpresa</button>
+
+  <script>
+    function redireccionar() {
+      window.location.href = 'pagina.html'; // Reemplaza 'mi_regalo.html' con el nombre de tu archivo HTML existente
+    }
+  </script>
+</body>
+</html>
